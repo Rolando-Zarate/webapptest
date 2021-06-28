@@ -1,0 +1,104 @@
+body{
+	background-color:rgb(20,20,20);
+	color:rgb(255,255,255);
+	font-family:"Roboto",arial; /*Cool font hah?*/
+}
+*{
+	margin:0; 
+	padding:0;
+}
+header nav{
+	background-color:rgb(10,10,10);
+	padding:15px;
+	overflow:hidden;
+	text-align:center;
+}
+.headerelem{
+	color:rgb(255,255,255);
+	text-decoration:none;
+}
+.left{
+    float:left;
+}
+.right{
+	float:right;
+}
+.content{
+	padding:10px;
+}
+.separator{
+	display:block;
+}
+.italic{
+	font-style:italic;
+}
+.menu{
+	background-color:rgb(30,30,30);
+	position:fixed;
+	padding:5px;
+	top:0;
+	left:0;
+	height:100vh;
+	width:20%;
+	box-shadow:0px 0px 0px 100vw rgba(100,100,100,0.5);
+	animation:0.5s ease-in 0s 1 startAnim;
+}
+@keyframes startAnim{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+.lined{
+	border-top:solid 2px rgb(40,40,40);
+	padding-top:3px;
+}
+.exit{
+	border-top:solid 2px rgb(40,40,40);
+	border-bottom:solid 2px rgb(40,40,40);
+	padding-top:3px;
+}
+.menulinks{
+	font-size:1.6em;
+	color:rgb(150,150,150);
+	text-decoration:none;
+	transition:padding-left 1s;
+}
+.menulinks:hover{
+	background-color:rgb(40,40,40);
+	border-top-right-radius:4px;
+	border-bottom-right-radius:4px;
+	padding-left:10vw;
+	text-decoration:underline;
+}
+.commonlink{
+	color:rgb(220,220,220);
+	text-decoration:none;
+}
+.commonlink:hover{
+	text-decoration:underline;
+}
+.endAnimated{
+	animation:0.5s ease-in 0s 1 endAnim;
+}
+.disabled{
+	display:none;
+}
+ul{
+	padding-left:35px;
+}
+@keyframes endAnim{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+@media (max-width:800px){
+	.menu{
+		width:40%;
+	}
+}
